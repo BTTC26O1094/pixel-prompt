@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaf & Line — Write well. Leave less behind. | Sustainable Stationery</title>
+  <meta name="description" content="Leaf & Line creates beautiful everyday stationery using recycled, responsibly sourced, and plant-based materials. Thoughtfully designed essentials for mindful makers.">
+  <meta name="keywords" content="sustainable stationery, eco-friendly notebooks, recycled paper journal, plantable seed cards, reclaimed wood pencils, minimalist stationery">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231B382B'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.4z'/></svg>">
+  
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Brand Announcement">
+    <span class="announcement-pill">Earth Month</span>
+    <span>Complimentary plantable wildflower seed card with orders over ₹999 &middot; 100% Plastic-free dispatch</span>
+  </aside>
+
+  <!-- ==========================================================================
+       1. NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header" id="mainHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Leaf & Line Home">
+        <span class="brand-icon-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+          </svg>
+        </span>
+        <div class="brand-text-group">
+          <span class="brand-name">Leaf & Line</span>
+          <span class="brand-tagline-micro">Sustainable Studio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#shop" class="nav-link">Shop</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#sustainability" class="nav-link">Sustainability</a></li>
+          <li><a href="#newsletter" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Search & Cart) -->
+      <div class="nav-actions">
+        <button class="btn-icon" id="searchBtn" aria-label="Search collection" title="Search (Press '/')">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button class="btn-icon" id="cartBtn" aria-label="Shopping Bag" title="View Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge" id="cartBadge">1</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#shop" class="nav-link">Shop Collection</a>
+      <a href="#story" class="nav-link">Our Story</a>
+      <a href="#sustainability" class="nav-link">Why Sustainable</a>
+      <a href="#impact-stats" class="nav-link">Impact Numbers</a>
+      <a href="#newsletter" class="nav-link">Join Our Note</a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. HERO SECTION — MOST IMPORTANT
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Hero Content (Left) -->
+        <div class="hero-content fade-in-up">
+          
+          <!-- Social proof micro-pill -->
+          <div class="hero-social-proof">
+            <span class="hero-stars">★★★★★</span>
+            <span>Rated 4.9/5 by 1,200+ mindful creators</span>
+          </div>
+
+          <!-- Small Badge -->
+          <div class="eyebrow" id="heroBadge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>THOUGHTFUL STATIONERY · LIGHTER FOOTPRINT</span>
+          </div>
+
+          <!-- Large Headline -->
+          <h1 class="hero-headline">
+            Write well.<br>
+            <em>Leave less behind.</em>
+          </h1>
+
+          <!-- Supporting Text -->
+          <p class="hero-supporting">
+            Beautiful everyday stationery made from recycled, responsibly sourced and plant-based materials — designed for notes, ideas and big plans.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#shop" class="btn btn-primary" id="heroCtaExplore">
+              <span>Explore Collection</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#story" class="btn btn-secondary" id="heroCtaStory">
+              Our Sustainability Story
+            </a>
+          </div>
+
+          <!-- Quick Certifications -->
+          <div class="hero-cert-pills">
+            <div class="hero-cert-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>100% Recycled Cotton & Kraft</span>
+            </div>
+            <div class="hero-cert-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Zero Toxic Inks</span>
+            </div>
+            <div class="hero-cert-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Plantable Seed Paper</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Visual (Right) -->
+        <div class="hero-visual-wrapper fade-in-up">
+          
+          <!-- Tactile Paper Backing Card -->
+          <div class="hero-backing-card" aria-hidden="true"></div>
+
+          <!-- Decorative Botanical SVGs -->
+          <svg class="deco-leaf deco-leaf-1" viewBox="0 0 100 100" fill="currentColor">
+            <path d="M50 0 C70 30, 90 40, 100 80 C80 90, 40 80, 20 60 C10 40, 30 10, 50 0 Z"></path>
+          </svg>
+          <svg class="deco-leaf deco-leaf-2" viewBox="0 0 100 100" fill="currentColor">
+            <path d="M20 100 C30 60, 50 40, 90 20 C80 40, 60 70, 40 80 C25 90, 20 100, 20 100 Z"></path>
+          </svg>
+
+          <!-- Main Visual Frame -->
+          <div class="hero-image-card">
+            <img 
+              src="assets/images/hero_stationery.jpg" 
+              alt="Sustainable stationery flatlay featuring recycled kraft notebook, wooden pencil, and green foliage" 
+              class="hero-img"
+              width="600" 
+              height="530"
+              loading="eager"
+            >
+          </div>
+
+          <!-- Organic Floating Badge Top -->
+          <div class="floating-badge floating-badge-top" aria-hidden="true">
+            <div class="floating-badge-icon">
+              <span class="eco-pulse-dot"></span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="floating-badge-title">100% Recycled Cotton & Kraft</div>
+              <div class="floating-badge-desc">Acid-free tactile 160 GSM pages</div>
+            </div>
+          </div>
+
+          <!-- Organic Floating Badge Bottom -->
+          <div class="floating-badge floating-badge-bottom" aria-hidden="true">
+            <div class="floating-badge-icon" style="color: var(--terracotta); background: var(--terracotta-soft);">
+              <span class="eco-pulse-dot" style="background: var(--terracotta);"></span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="floating-badge-title">Zero-Plastic Dispatch</div>
+              <div class="floating-badge-desc">Compostable paper tape & soy inks</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. TRUST / SUSTAINABILITY STRIP
+       ========================================================================== -->
+  <section class="trust-strip" aria-label="Core Brand Pillars">
+    <div class="container">
+      <div class="trust-grid">
+        
+        <!-- Pillar 1 -->
+        <div class="trust-item">
+          <div class="trust-icon-box" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 4 23 10 17 10"></polyline>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+            </svg>
+          </div>
+          <div class="trust-text-group">
+            <span class="trust-title">♻ Recycled Materials</span>
+            <span class="trust-subtext">Post-consumer fiber</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="trust-item">
+          <div class="trust-icon-box" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 20h10"></path>
+              <path d="M10 20c0-4 1-6 2-10"></path>
+              <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7 1.5-.4 3-1.3 4.2-2.6 1.4-1.5 2-3.5 2-5.5-2 0-4 .6-5.5 2-1.3 1.2-2.2 2.7-2.6 4.2-.4-.6-.4-1.2-.4-1.8z"></path>
+            </svg>
+          </div>
+          <div class="trust-text-group">
+            <span class="trust-title">🌱 Plant-Based Options</span>
+            <span class="trust-subtext">Wildflower seed paper</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="trust-item">
+          <div class="trust-icon-box" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <div class="trust-text-group">
+            <span class="trust-title">📦 Plastic-Free Packaging</span>
+            <span class="trust-subtext">100% recyclable parcels</span>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="trust-item">
+          <div class="trust-icon-box" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div class="trust-text-group">
+            <span class="trust-title">✦ Small-Batch Production</span>
+            <span class="trust-subtext">Mindfully handcrafted</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. FEATURED PRODUCTS
+       ========================================================================== -->
+  <section class="products-section" id="shop">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-header fade-in-up">
+        <div class="eyebrow">CURATED ESSENTIALS</div>
+        <h2 class="section-title">Stationery with a softer footprint.</h2>
+        <p class="section-subtitle">Thoughtfully designed essentials for school, work and creative days.</p>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid">
+        
+        <!-- Product 1 -->
+        <article class="product-card fade-in-up" data-id="journal-01" data-name="Daily Notes Journal" data-price="399" data-image="assets/images/product_journal.jpg" data-spec="Recycled kraft cover · Recycled paper pages">
+          <div class="product-image-box">
+            <span class="product-tag">Bestseller</span>
+            <img 
+              src="assets/images/product_journal.jpg" 
+              alt="Daily Notes Journal with recycled kraft cover and ribbon bookmark" 
+              class="product-img"
+              loading="lazy"
+              width="400"
+              height="330"
+            >
+          </div>
+          <div class="product-content">
+            <div class="product-meta-row">
+              <div class="product-rating">
+                <span class="product-rating-stars">★★★★★</span>
+                <span>4.9 (128)</span>
+              </div>
+              <span style="font-size: 0.75rem; color: var(--forest-primary); font-weight: 600;">100% Recycled</span>
+            </div>
+            <h3 class="product-title">Daily Notes Journal</h3>
+            <div class="product-specs">
+              <div class="product-spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Recycled kraft cover</span>
+              </div>
+              <div class="product-spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Recycled paper pages (160 GSM)</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-price-box">
+                <span class="product-price-label">Price</span>
+                <span class="product-price">₹399</span>
+              </div>
+              <button class="btn-add-to-bag" aria-label="Add Daily Notes Journal to bag">
+                <span>Add to Bag</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card fade-in-up" data-id="pencils-02" data-name="Reclaimed Wood Pencils" data-price="199" data-image="assets/images/product_pencils.jpg" data-spec="Set of 6 · Natural Reclaimed Wood">
+          <div class="product-image-box">
+            <span class="product-tag">Zero Waste</span>
+            <img 
+              src="assets/images/product_pencils.jpg" 
+              alt="Reclaimed Wood Pencils set of 6 in kraft sleeve" 
+              class="product-img"
+              loading="lazy"
+              width="400"
+              height="330"
+            >
+          </div>
+          <div class="product-content">
+            <div class="product-meta-row">
+              <div class="product-rating">
+                <span class="product-rating-stars">★★★★★</span>
+                <span>4.8 (94)</span>
+              </div>
+              <span style="font-size: 0.75rem; color: var(--forest-primary); font-weight: 600;">Reclaimed</span>
+            </div>
+            <h3 class="product-title">Reclaimed Wood Pencils</h3>
+            <div class="product-specs">
+              <div class="product-spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Set of 6 graphite pencils</span>
+              </div>
+              <div class="product-spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Fallen & reclaimed cedar wood</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-price-box">
+                <span class="product-price-label">Price</span>
+                <span class="product-price">₹199</span>
+              </div>
+              <button class="btn-add-to-bag" aria-label="Add Reclaimed Wood Pencils to bag">
+                <span>Add to Bag</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card fade-in-up" data-id="cards-03" data-name="Seed Paper Cards" data-price="249" data-image="assets/images/product_seed_cards.jpg" data-spec="Plantable greeting cards · Wildflower seeds">
+          <div class="product-image-box">
+            <span class="product-tag tag-terracotta">Plantable 🌱</span>
+            <img 
+              src="assets/images/product_seed_cards.jpg" 
+              alt="Seed paper cards embedded with real wildflower seeds" 
+              class="product-img"
+              loading="lazy"
+              width="400"
+              height="330"
+            >
+          </div>
+          <div class="product-content">
+            <div class="product-meta-row">
+              <div class="product-rating">
+                <span class="product-rating-stars">★★★★★</span>
+                <span>5.0 (142)</span>
+              </div>
+              <span style="font-size: 0.75rem; color: var(--terracotta); font-weight: 600;">Wildflowers</span>
+            </div>
+            <h3 class="product-title">Seed Paper Cards</h3>
+            <div class="product-specs">
+              <div class="product-spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Plantable greeting cards (Set of 4)</span>
+              </div>
+              <div class="product-spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Embedded wildflower & herb seeds</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-price-box">
+                <span class="product-price-label">Price</span>
+                <span class="product-price">₹249</span>
+              </div>
+              <button class="btn-add-to-bag" aria-label="Add Seed Paper Cards to bag">
+                <span>Add to Bag</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. WHY SUSTAINABLE?
+       ========================================================================== -->
+  <section class="why-section" id="sustainability">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-header fade-in-up">
+        <div class="eyebrow">OUR COMMITMENT</div>
+        <h2 class="section-title">Small choices. Real impact.</h2>
+        <p class="section-subtitle">
+          We choose materials with a circular mindset, minimize unnecessary packaging and create products designed to be loved, used and responsibly let go.
+        </p>
+      </div>
+
+      <!-- 4 Benefits Grid -->
+      <div class="benefits-grid">
+        
+        <!-- Benefit 1 -->
+        <div class="benefit-card fade-in-up" data-step="01">
+          <div class="benefit-icon-wrapper" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+            </svg>
+          </div>
+          <h3 class="benefit-title">Recycled Materials</h3>
+          <p class="benefit-text">Less demand for new raw materials. Our journals utilize post-consumer cotton scraps and recycled pulp.</p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="benefit-card fade-in-up" data-step="02">
+          <div class="benefit-icon-wrapper" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+            </svg>
+          </div>
+          <h3 class="benefit-title">Plastic-Conscious</h3>
+          <p class="benefit-text">Thoughtful alternatives to unnecessary plastic. From plant-wax binders to cotton twill ribbons, plastic is eliminated.</p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="benefit-card fade-in-up" data-step="03">
+          <div class="benefit-icon-wrapper" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            </svg>
+          </div>
+          <h3 class="benefit-title">Responsible Packaging</h3>
+          <p class="benefit-text">Minimal, recyclable packaging. Every parcel arrives sealed with water-activated paper tape and soy inks.</p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="benefit-card fade-in-up" data-step="04">
+          <div class="benefit-icon-wrapper" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="benefit-title">Made to Last</h3>
+          <p class="benefit-text">Durable designs created for everyday use. Lay-flat bookbindings and resilient covers that age with grace.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. IMPACT STATISTICS
+       ========================================================================== -->
+  <section class="stats-section" id="impact-stats" aria-label="Our Sustainability Metrics">
+    <div class="container">
+      <div class="stats-grid">
+        
+        <!-- Stat 1 -->
+        <div class="stat-item fade-in-up">
+          <div class="stat-number">
+            <span class="stat-number-val" data-target="92">0</span><span class="unit">%</span>
+          </div>
+          <p class="stat-label">Recycled or reclaimed material across our core range</p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="stat-item fade-in-up">
+          <div class="stat-number">
+            <span class="stat-number-val" data-target="0">0</span>
+          </div>
+          <p class="stat-label">Single-use plastic in standard packaging</p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="stat-item fade-in-up">
+          <div class="stat-number">
+            <span class="stat-number-val" data-target="100">0</span><span class="unit">%</span>
+          </div>
+          <p class="stat-label">Plantable seed-paper cards with non-GMO seeds</p>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="stat-item fade-in-up">
+          <div class="stat-number">
+            <span class="stat-number-val" data-target="6">0</span>
+          </div>
+          <p class="stat-label">Small-batch makers in our artisan partner network</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. BRAND STORY
+       ========================================================================== -->
+  <section class="story-section" id="story">
+    <div class="container">
+      <div class="story-grid">
+        
+        <!-- Story Image (Left) -->
+        <div class="story-image-wrap fade-in-up">
+          <div class="story-image-frame">
+            <img 
+              src="assets/images/story_artisan.jpg" 
+              alt="Editorial workspace with textured papers, sketches, and natural light" 
+              class="story-img"
+              loading="lazy"
+              width="540"
+              height="500"
+            >
+          </div>
+          <div class="story-stamp-badge" aria-hidden="true">Est. 2026 &middot; Mindful Craft</div>
+          <div class="story-quote-card" aria-hidden="true">
+            <p class="story-quote-text">“Paper made by hands that respect the soil it returns to.”</p>
+          </div>
+        </div>
+
+        <!-- Story Content (Right) -->
+        <div class="story-content fade-in-up">
+          <div class="eyebrow">OUR STORY</div>
+          <h2 class="story-main-heading">Good ideas deserve good materials.</h2>
+          <p class="story-paragraph">
+            Leaf & Line started with a simple question: can stationery feel premium without creating unnecessary waste? We believe the answer is yes.
+          </p>
+          <p class="story-paragraph">
+            We focus on tactile paper, thoughtful design and honest material choices — creating stationery that feels good in your hands and makes sense for the planet.
+          </p>
+          <div class="story-btn-wrapper">
+            <a href="#shop" class="btn btn-primary">
+              <span>Read Our Story</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. CUSTOMER QUOTE
+       ========================================================================== -->
+  <section class="quote-section" aria-label="Customer Testimonial">
+    <div class="container">
+      <div class="quote-container fade-in-up">
+        
+        <div class="quote-stars" aria-label="5 out of 5 stars">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        </div>
+
+        <div class="quote-marks" aria-hidden="true">“</div>
+        <blockquote class="customer-quote-text">
+          Beautiful enough to keep on my desk, thoughtful enough to feel good about using every day.
+        </blockquote>
+        
+        <div class="customer-author-box">
+          <div class="customer-avatar" aria-hidden="true">AA</div>
+          <div style="text-align: left;">
+            <div class="customer-name">— Aanya</div>
+            <div class="customer-role">Creative Student & Mindful Writer</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. NEWSLETTER / FINAL CTA
+       ========================================================================== -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="container">
+      
+      <!-- Elevated Card Enclosure -->
+      <div class="newsletter-card-enclosure fade-in-up">
+        
+        <!-- Subtle Background Botanical Leaves -->
+        <svg class="newsletter-leaf-deco newsletter-leaf-left" viewBox="0 0 100 100" fill="currentColor">
+          <path d="M50 0 C70 30, 90 40, 100 80 C80 90, 40 80, 20 60 C10 40, 30 10, 50 0 Z"></path>
+        </svg>
+        <svg class="newsletter-leaf-deco newsletter-leaf-right" viewBox="0 0 100 100" fill="currentColor">
+          <path d="M50 0 C70 30, 90 40, 100 80 C80 90, 40 80, 20 60 C10 40, 30 10, 50 0 Z"></path>
+        </svg>
+
+        <div class="newsletter-box">
+          <div class="eyebrow eyebrow-dark">MONTHLY DISPATCH</div>
+          <h2 class="newsletter-heading">Get inspired, not spammed.</h2>
+          <p class="newsletter-text">
+            Join our monthly note for creative prompts, sustainable stationery tips and new collection updates.
+          </p>
+
+          <!-- Newsletter Form -->
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <input 
+              type="email" 
+              class="newsletter-input" 
+              id="newsletterEmail" 
+              placeholder="Your email address" 
+              required 
+              aria-label="Your email address"
+            >
+            <button type="submit" class="newsletter-btn" id="newsletterSubmitBtn">
+              Join the Note →
+            </button>
+          </form>
+
+          <!-- Success Feedback Banner -->
+          <div class="newsletter-success" id="newsletterSuccess" role="alert">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DCE7DF" stroke-width="2.5">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>Thank you for joining our note! A welcome prompt has been sent to your inbox.</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#DCE7DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+            </svg>
+            <span>Leaf & Line</span>
+          </div>
+          <div class="footer-tagline">“Write well. Leave less behind.”</div>
+          <p class="footer-desc">
+            Thoughtfully crafted stationery designed in harmony with nature. Crafted for thinkers, creators, and everyday mindful writers.
+          </p>
+        </div>
+
+        <!-- Links Columns -->
+        <div class="footer-nav-group">
+          
+          <div class="footer-nav-col">
+            <div class="footer-col-title">Collection</div>
+            <a href="#shop" class="footer-link">Daily Journals</a>
+            <a href="#shop" class="footer-link">Cedar Pencils</a>
+            <a href="#shop" class="footer-link">Seed Paper Cards</a>
+            <a href="#shop" class="footer-link">Refill Packs</a>
+          </div>
+
+          <div class="footer-nav-col">
+            <div class="footer-col-title">About</div>
+            <a href="#story" class="footer-link">Our Story</a>
+            <a href="#sustainability" class="footer-link">Sustainability</a>
+            <a href="#impact-stats" class="footer-link">Impact Report</a>
+            <a href="#newsletter" class="footer-link">Artisan Collective</a>
+          </div>
+
+          <div class="footer-nav-col">
+            <div class="footer-col-title">Connect & Legal</div>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+            <a href="#newsletter" class="footer-link">Contact</a>
+            <a href="#privacy" class="footer-link">Privacy Policy</a>
+            <a href="#terms" class="footer-link">Terms of Service</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 Leaf & Line. Made for mindful makers.</div>
+        <div class="footer-bottom-links">
+          <span>Non-toxic soy inks</span>
+          <span>&middot;</span>
+          <span>100% Recyclable</span>
+          <span>&middot;</span>
+          <span>Crafted in India</span>
+          <span>&middot;</span>
+          <a href="#hero" class="back-to-top-btn" id="backToTopBtn">Back to top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       INTERACTIVE CART SLIDE-OUT DRAWER
+       ========================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Bag">
+    <div class="drawer-header">
+      <h3 class="drawer-title">Your Mindful Bag</h3>
+      <button class="drawer-close-btn" id="closeCartBtn" aria-label="Close Bag">&times;</button>
+    </div>
+
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Items dynamically populated via main.js -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-sustainability-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        </svg>
+        <span>Shipped 100% plastic-free with tracking</span>
+      </div>
+      <div class="cart-subtotal-row">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">₹399</span>
+      </div>
+      <button class="btn btn-primary cart-checkout-btn" onclick="alert('Thank you for exploring Leaf & Line! Checkout flow is ready.')">
+        Proceed to Checkout →
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       INTERACTIVE QUICK SEARCH MODAL
+       ========================================================================== -->
+  <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-label="Search stationery">
+    <div class="search-modal-header">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" class="search-modal-input" id="searchInput" placeholder="Search journals, pencils, cards..." autocomplete="off">
+      <button class="drawer-close-btn" id="closeSearchBtn" aria-label="Close Search">&times;</button>
+    </div>
+    <div style="font-size: 0.75rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px;">Suggested Searches:</div>
+    <div class="search-modal-tags">
+      <span class="search-tag">Daily Notes Journal</span>
+      <span class="search-tag">Reclaimed Wood Pencils</span>
+      <span class="search-tag">Plantable Seed Cards</span>
+      <span class="search-tag">Recycled Kraft Paper</span>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sage-light)" stroke-width="2">
+      <circle cx="12" cy="12" r="10"></circle>
+      <polyline points="12 6 12 12 16 14"></polyline>
+    </svg>
+    <span class="toast-msg">Item added to bag</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
